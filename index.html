@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/assets/assets/style.css" />
+    <link rel="stylesheet" href="/style.css" />
     <title>Prework Study Guide</title>
   </head>
   <body>
@@ -44,16 +44,53 @@
       <section class="card" id="css-section">
         <h2>CSS</h2>
         <ul>
-          <li>Enter your CSS notes here</li>
+          <li>CSS imparts style to your webpage using <em>declarations</em></li>
+          <li>any line of CSS code consist of a selector and a declaration</li>
+          <li>a selector defintes the element or attributes to which the rules or declarations will apply
+          <ul><li>"div" is a common selector placeholder
+            <li>however, you can use any HTML element as a selector to apply rules to them</li>
+          </ul></li>
+          </li>
+          <li>declarations consist of 2 important components
+          </li>
+            <ul><li>The CSS property we want to apply (e.g. color)</li>
+              <li>the value of said property</li>
+              <li>e.g. div {color: blue; text align: justify;}</li>
+            </ul>
+          <li>The <em>box method</em> describes the relation of objects in your webpage</li>
+          <ul><li><img id="inTextFigures" src="/assets/assets/BoxModel.png" alt="a picture of the box model"></li></ul>
+          <li>There are multiple different selectors we can choose to exercise rules to different elements
+          </li>
+          <li>Examples of HTML elements you can make rules for:</li>
+          <ul>Examples of HTML elements you can make rules for: 
+            <li>*: applies a given rule to all the elements on your HTML page</li>
+            <li>header: applies rules to the header</li>
+            <li>footer: applies rules to the footer</li>
+            <li>hx: where x = 1-6 to apply rules to headers</li>
+            <li>p: applies a set of rules across all paragraphs in the file</li>
+            <ul></ul>
+          </ul>
+          <li>In order to save time and not repeat yoself, you can apply the same rules to different selectors by simply separating them with a comma</li>
+          <li>Additionally, you can assign classes to HTML elements by adding "class=x" in their tag </li>
+          <ul><li>inspect this page to see how .card is applied</li></ul>
+        </ul>
+  
         </ul>
       </section>
       <section class="card" id="git-section">
         <h2>GIT</h2>
         <ul>
-          <li>git status: check what branch we are currently working on</li>
-          <li>
-            git checkout -b branch name: creates a new branch and switches to it
-          </li>
+          <li><em>git init</em>: initiates an empty repo, use this when you first enter a directory to create a .git file</li>
+          <li><em>git status</em>: see what is set for staging and what working files need to be updated/added/removed</li>
+          <li><em>git add &lt;filename&gt;</em>: add a file to staging</li>
+          <li><em>git add -u</em>: updates all the files needed in staging (quick hand so as to not add files separately)</li>
+          <li><em>git commit -m &lt;commit message here&gt;</em>: make the commit message as descriptive as possible; takes a snapshot of the repo if you were to push the branch this is what you would be "pushing"</li>
+          <li><em>git push</em>: pushes what file you're on to the repo</li>
+          <li><em>git branch -b &lt;newBranchName&gt;</em>: creates a new branch</li>
+          <li><em>git checkout&lt;branchName&gt;</em>: takes you to a certain branch
+          <li><em>git pull</em>: pull down changes from repo, comes in handy when you work with others</li>
+          <li><em>git branch -a</em>: display all branches that are in the repo before pull</li>
+          <li><img id="inTextFigures" src="/assets/assets/GitCheatSheet copy.png" alt=""></li>
         </ul>
       </section>
       <section class="card" id="javascript-section">
@@ -61,7 +98,7 @@
         <ul>
           <li>Javascript makes a website interactive</li>
           <li>A variable is a named container that allows us to store values in our code.</li>
-            <ul><li>e.g. "let band = Creeping Death"</li>
+            <ul><li>e.g. <em>let band = Creeping Death"</em></li>
             <li>For the above example, console.log(band) will display "Creeping Death" in your browser console</li></ul>
           <li>Control flow is the order in which a computer executes code in a script, it always runs linearly, from top to bottom</li>
             <ul><li>Because of control flow, the link to JS within an html file should always be inserted at the bottom of the body</li></ul>
@@ -81,8 +118,12 @@
           <li>e.g.: let(bands x = 0; x < shapes.length; x++) {
             // code block
            }</li></ul>
-          </ul>
-          </li>
+           <li>a <strong>function</strong>: is a set of instructions that informs the computer how to perform a certain task</li>
+           <ul><li>Unlike for loops, they are not automatically executed, and instead have to be called by name</li>
+            <li>to create a function, use first use the <em>function</em> keyword to declare a new variable and give our functin a unique name followed by ()</li>
+           <li>follow this line with {}, which will contain the code you want to execute</li>
+           <li>in order to call a function, simply type out the appropriate function name with ()</li>
+           
         </ul>
       </section>
     </main>
@@ -90,6 +131,6 @@
     <footer>
       <p>I can code!</p>
     </footer>
-    <script src="./assets/script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
